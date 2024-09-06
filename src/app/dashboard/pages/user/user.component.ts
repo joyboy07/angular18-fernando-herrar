@@ -21,7 +21,7 @@ import { UsersService } from '../../../services/users.service';
         />
         <div>
           <h3>{{user()?.first_name }} {{user()?.last_name }}</h3>
-          <p>{{user()?.emial }}</p>
+          <p>{{user()?.email }}</p>
         </div>
       </section>
     } @else {
