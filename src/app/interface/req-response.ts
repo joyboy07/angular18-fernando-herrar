@@ -1,13 +1,18 @@
-export interface UserRequest {
+export interface UsersResponse {
 	page:        number;
 	per_page:    number;
 	total:       number;
 	total_pages: number;
-	data:        Datum[];
+	data:        User[];
 	support:     Support;
 }
 
-export interface Datum {
+export interface UserResponse {
+	data:    User;
+	support: Support;
+}
+
+export interface User {
 	id:         number;
 	email:      string;
 	first_name: string;
@@ -19,3 +24,7 @@ export interface Support {
 	url:  string;
 	text: string;
 }
+
+
+
+
